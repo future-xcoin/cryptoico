@@ -1,0 +1,519 @@
+body {
+    background-color: aliceblue;
+    text-align: center;
+    align-content: center ;
+      font-family:'roboto',sans-serif;
+      
+  }
+  form{
+    width:360px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  button {
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    background-color: white;
+    color: purple;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .transactionbtn {
+    width: 150px;
+    height: 45px;
+    right: 44px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: center;
+  }
+  .transactionhref {
+    text-decoration: none;
+    color: white;
+
+  }
+  .coinsimage{
+    width: 100%;
+    height: 200px;
+    border: none;
+    filter: brightness(90%) contrast(130%);
+    opacity: 1;
+    padding: 0px;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+  .digitaldollars{
+    width: 100%;
+    height: 120px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: limegreen;
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .ice {
+    width: 100%;
+    height: 120px;
+    margin-top:-18px;
+    border: none;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-style: bold;
+    text-align: center;
+      text-decoration: none;
+  }
+  .crypto {
+    width: 100%;
+    height: 120px;
+    margin-top:-18px;
+    border: none;
+    border-radius: 20px;
+    background-color: rebeccapurple;
+    color: goldenrod;
+    font-size: 20px;
+    font-style: bold;
+    text-align: center;
+      text-decoration: none;
+  }
+  
+  .xcoins{
+    width: 100%;
+    height: 200px;
+    margin-top:-18px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  .navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: blue;
+    border-radius: 18px;
+    text-align: center;
+  }
+  .navbar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    
+  }
+  .navbar a:hover {
+    background-color: rgb(224, 20, 243);
+    color: white;
+    border-radius: 8px;
+  }
+
+/* CRYPTO PAGE styles */
+
+  /* General styles */
+
+header {
+    border-radius: 20px;
+    background-color:  blue;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Pool card styles */
+.pool {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pool h2 {
+    margin-bottom: 10px;
+}
+
+.graph {
+    margin: 20px 0;
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bar {
+    background-color: rgb(224, 20, 243);
+    color: #fff;
+    padding: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.invest-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.invest-btn:hover {
+    background-color: #10f518ce;
+}
+
+/* Specific pool styles */
+
+.ethereum {
+    background: linear-gradient(135deg, #00000a,#055f94c4, #627eea);
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.dogecoin {
+    background: linear-gradient(135deg,#c4b70ef1, #c4b70ef1,#56f8f0,#f1ef55,  #f1ef55);
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.Litecoin {
+    background: linear-gradient(135deg, #15141ada, #bebebe);
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.Vechain{
+    background: linear-gradient(135deg, #240668c0,#08c0e0, #07eb38);
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.Solana {
+    background: linear-gradient(135deg, #0e0116c4,#c40ae9c4 , #03f7ce,#c40ae9c4 ,#c40ae9c4 );
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Memecoin {
+    background: linear-gradient(135deg, #ffee00, #e52e71);
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+.Ripple {
+    background: linear-gradient(135deg, #024450, #041a20,#8a8109ce, #347ed3,#28e467);
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Cardano {
+    background: linear-gradient(135deg,#0033ad, #041a20, #347ed3,#0033ad);
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Polkadot {
+    background-color: #e6007a;
+    background: linear-gradient(135deg,#7f0483, #e6007a, #7f0483);
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;}
+
+#tron {
+    background-color: #f00;
+    border-color: blue;
+}
+
+
+#chainlink {
+    background-color: #2a5ada;
+    border-color: blue;
+}
+
+#stellar {
+    background-color: #7dcbfb;
+    border-color: blue;
+}
+
+#vechain {
+    background-color: #15bdff;
+    border-color: blue;
+}
+
+#cosmos {
+    background-color: #2e3148;
+    border-color: blue;
+}
+/* ACCOUNT PAGE styles */
+
+.accountcard{
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#accountdetails {
+    background-color: #fff;
+    border-color: blue;
+}
+.account-btn{
+    background-color: #a74caf;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* TRANSACTION Styles */
+
+
+/* Transaction Card Styles */
+.transaction-card {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.transaction-card:hover {
+    transform: scale(1.05);
+}
+
+.transaction-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.transaction-card p {
+    margin: 0.5rem 0;
+}
+
+.transaction-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.transaction-card ul li {
+    margin: 0.25rem 0;
+}
+
+.input-group {
+    margin-top: 10px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons */
+.transaction-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.transaction-buttons button {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.recharge-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.recharge-btn:hover {
+    background-color: #218838;
+}
+
+.withdraw-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.withdraw-btn:hover {
+    background-color: #c82333;
+}
+
+  
+  .cards:hover {
+    transform: scale(1.05);
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .investments, .returns {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+  
+  .investments span, .returns span {
+    font-weight: bold;
+  }
+  
+  .cardsform {
+    margin-top: 20px;
+  }
+  
+  .label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+  }
+  
+  input:focus {
+    border: 2px solid #fff;
+  }
+  
+  .invests-button {
+    background-color: #fff;
+    color: #e52e71;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .invests-button:hover {
+    background-color: #e52e71;
+    color: #fff;
+  }
+  
+.announcement {
+    background-color: #fffae6;
+    color: #333;
+    padding: 15px 20px;
+    border-left: 5px solid #ffcc00;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .announcement strong {
+    color: #ff9800;
+  }
+  
+  .announcement p {
+    margin: 0;
+    line-height: 1.5;
+  }

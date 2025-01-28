@@ -1,139 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Pools</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Crypto ICO</h1>
-    </header>
-    <div class="announcement">
-        <p>
-          📢 <strong>Announcement:</strong> Our new Crypto ICO is live! Don't miss your chance to invest now!
-        </p>
-      </div>
-    <main>
-          <div class="ethereum">
-            <h2 class="title">Ethereum</h2>
-            <p class="investments">Unit Price: <span>$10</span></p>
-            <p class="investments">Offering Period: <span>7 Days</span></p>
-            <p class="returns">Expected Return: <span>118%</span></p>
-            
-            <form class="cardsform">
-              <label for="units" class="label">Enter Units to Purchase:</label>
-              <input type="number" id="units" name="units" min="1" max="2" required placeholder="Maximum Units 2">
-              <button class="invests-button" type="submit">Purchase Now</button>
-            </form>
-          </div>
-          <div class="dogecoin">
-            <h2 class="title">Dogecoin</h2>
-            <p class="investments">Unit Price: <span>$25</span></p>
-            <p class="investments">Offering Period: <span>7 Days</span></p>
-             <p class="returns">Expected Return: <span>120%</span></p>
-            
-            <form class="cardsform">
-              <label for="units" class="label">Enter Units to Purchase:</label>
-              <input type="number" id="units" name="units" min="1" max="3" required placeholder="Maximum Units 3">
-              <button class="invests-button" type="submit">Purchase Now</button>
-            </form>
-          </div>
-          <div class="Litecoin">
-            <h2 class="title">Litecoin</h2>
-            <p class="investments">Unit Price: <span>$50</span></p>
-            <p class="investments">Offering Period: <span>7 Days</span></p>
-            <p class="returns">Expected Return: <span>125%</span></p>
-            
-            <form class="cardsform">
-              <label for="units" class="label">Enter Units to Purchase:</label>
-              <input type="number" id="units" name="units" min="1" max="4" required placeholder="Maximum Units 4">
-              <button class="invests-button" type="submit">Purchase Now</button>
-            </form>
-          </div>
-          <div class="Vechain">
-            <h2 class="title">Vechain</h2>
-            <p class="investments">Unit Price: <span>$75</span></p>
-            <p class="investments">Offering Period: <span>7 Days</span></p>
-            <p class="returns">Expected Return: <span>130%</span></p>
-            
-            <form class="cardsform">
-              <label for="units" class="label">Enter Units to Purchase:</label>
-              <input type="number" id="units" name="units" min="1" max="5"required placeholder="Maximum Units 5">
-              <button class="invests-button" type="submit">Purchase Now</button>
-            </form>
-          </div>
-          <div class="Solana">
-            <h2 class="title">Solana</h2>
-            <p class="investments">Unit Price: <span>$100</span></p>
-            <p class="investments">Offering Period: <span>7 Days</span></p>
-            <p class="returns">Expected Return: <span>135%</span></p>
-            
-            <form class="cardsform">
-              <label for="units" class="label">Enter Units to Purchase:</label>
-              <input type="number" id="units" name="units" min="1" max="6" required placeholder="Maximum Units 6">
-              <button class="invests-button" type="submit">Purchase Now</button>
-            </form>
-          </div>
-          <div class="Memecoin">
-            <h2 class="title">Memecoin</h2>
-            <p class="investments">Unit Price: <span>$250</span></p>
-            <p class="investments">Offering Period: <span>7 Days</span></p>
-            <p class="returns">Expected Return: <span>140%</span></p>
-            
-            <form class="cardsform">
-              <label for="units" class="label">Enter Units to Purchase:</label>
-              <input type="number" id="units" name="units" min="1" max="7" required placeholder="Maximum Units 7">
-              <button class="invests-button" type="submit">Purchase Now</button>
-            </form>
-          </div>
-          <div class="Ripple">
-            <h2 class="title">Ripple</h2>
-            <p class="investments">Unit Price: <span>$500</span></p>
-            <p class="investments">Offering Period: <span>7 Days</span></p>
-            <p class="returns">Expected Return: <span>145%</span></p>
-            
-            <form class="cardsform">
-              <label for="units" class="label">Enter Units to Purchase:</label>
-              <input type="number" id="units" name="units" min="1" max="8" required placeholder="Maximum Units 8">
-              <button class="invests-button" onclick="invest('ripple')"S type="submit">Purchase Now</button>
-            </form>
-          </div>
-          <div class="Cardano">
-            <h2 class="title">Cardano</h2>
-            <p class="investments">Unit Price: <span>$1000</span></p>
-            <p class="investments">Offering Period: <span>6 Days</span></p>
-            <p class="returns">Expected Return: <span>150%</span></p>
-            
-            <form class="cardsform">
-              <label for="units" class="label">Enter Units to Purchase:</label>
-              <input type="number" id="units" name="units" min="1" max="9" required placeholder="Maximum Units 9">
-              <button class="invests-button" onclick="invest('cardano')"S type="submit">Purchase Now</button>
-            </form>
-          </div>
-          <div class="Polkadot">
-            <h2 class="title">Polkadot</h2>
-            <p class="investments">Unit Price: <span>$1500</span></p>
-            <p class="investments">Offering Period: <span>6 Days</span></p>
-            <p class="returns">Expected Return: <span>160%</span></p>
-            
-            <form class="cardsform">
-              <label for="units" class="label">Enter Units to Purchase:</label>
-              <input type="number" id="units" name="units" min="1" max="10" required placeholder="Maximum Units 10">
-              <button class="invests-button" onclick="invest('polkadot')"S type="submit">Purchase Now</button>
-            </form>
-          </div>
-        
-    </main>
-    <div class="navbar">
-        <a class="" href="homepage.html">Homepage</a>
-        <a href="trade.html">Trade</a>
-        <a href="crypto.html">Crypto</a>
-        <a href="account.html">Account</a>
-      
-      </div>
+<html>
 
-    <script src="crypto.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Crypto Account</h1>
+</header>
+    <form action="">
+    <table>
+      <tr>
+        <td>	<div class="Recharge_Wallet_balance">
+  <h2>Recharge Wallet</h2>
+  <h2>USDT: <span id="rechargewallet">0</span> </h2>
+  </div</td>
+  <td>	
+  <div class="Wallet_balance">
+  	  <h2>  Wallet Balance</h2>
+  	  <h2>USDT: <span id="walletbalance">0</span></h2>
+  	</div</td>
+      </tr>
+    </table>
+  
+     </form><br>
+     
+       <button class="transactionbtn" id="rechargeBtn"><a href="transaction.html" class="transactionhref">Recharge</a></button>
+       <button class="transactionbtn" id="sellBtn"><a href="transaction.html" class="transactionhref">Withdraw</a></button><br>
+     
+  <br>
+  <main>
+  <div class="accountcard" id="accountdetails">
+    <h2>Account Details </h2>
+    <br>
+    <h3>Name: John Brandon</h3>
+    <h3>email: jbrandy@gmail.com</h3>
+    <h3>Phone number: 0721****12</h3>
+    <button class="account-btn" onclick="edit('accountdetails')">Update</button>
+</div>
+<div class="accountcard" id="accountdetails">
+    <h2>Payment Details </h2>
+    <br>
+    <h3>Name: John Brandon</h3>
+    <h3>email: jbrandy@gmail.com</h3>
+    <h3>Phone number: 0721****12</h3>
+    <button class="account-btn" onclick="edit('accountdetails')">Update</button>
+</div>
+</main>
+    <hr>
+
+    <button class="accountbtn" type="submit"><a href="premiuminvestments.html">Premium Investments</a> </button><br><hr>
+
+       <button class="accountbtn" type="submit"><a href="kyc.html">KYC Status</a> </button><br><hr>
+       <button class="accountbtn" type="submit"><a href="contact.html">Contact Us</a> </button><br><hr>
+
+       <button class="accountbtn" type="submit"><a href="logout.php">Logout</a>
+       </button><br><hr>
+
+       
+       
+       
+           <div class="navbar">
+            <a class="" href="homepage.html">Homepage</a>
+            <a href="trade.html">Trade</a>
+            <a href="crypto.html">Crypto</a>
+            <a href="account.html">Account</a>
+</div>
+  
+<script src="main.js00"></script>
 </body>
+
 </html>

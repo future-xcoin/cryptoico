@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Page</title>
+ <link rel="stylesheet" href="style.css"></head>
+<body>
+    <header>
+        <h1>Trading Platform</h1>
+        
+    </header>
+
+    <main>
+        <section class="market">
+            <h2>Market Overview</h2>
+            <div class="market-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Asset</th>
+                            <th>Price</th>
+                            <th>Change</th>
+                            <th>Trade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>BTC/USD</td>
+                            <td>$29,000</td>
+                            <td class="up">+0.5%</td>
+                            <td><a href="#" class="trade-btn">Trade</a></td>
+                        </tr>
+                        <tr>
+                            <td>ETH/USD</td>
+                            <td>$1,800</td>
+                            <td class="down">-0.7%</td>
+                            <td><a href="#" class="trade-btn">Trade</a></td>
+                        </tr>
+                        <tr>
+                            <td>DOGE/USDT</td>
+                            <td>$0.073</td>
+                            <td class="up">+2.1%</td>
+                            <td><a href="#" class="trade-btn">Trade</a></td>
+                        </tr>
+                        <tr>
+                            <td>LTC/USDT</td>
+                            <td>$95.00</td>
+                            <td class="up">+0.9%</td>
+                            <td><a href="#" class="trade-btn">Trade</a></td>
+                        </tr>
+                        <tr>
+                            <td>VET/USDT</td>
+                            <td>$0.021</td>
+                            <td class="down">-0.4%</td>
+                            <td><a href="#" class="trade-btn">Trade</a></td>
+                        </tr>
+                        <tr>
+                            <td>SOL/USDT</td>
+                            <td>$24.00</td>
+                            <td class="up">+0.3%</td>
+                            <td><a href="#" class="trade-btn">Trade</a></td>
+                        </tr>
+                        <tr>
+                            <td>MEME/USDT</td>
+                            <td>$0.0045</td>
+                            <td class="down">-0.2%</td>
+                            <td><a href="#" class="trade-btn">Trade</a></td>
+                        </tr>
+                        <tr>
+                            <td>XRP/USDT</td>
+                            <td>$0.62</td>
+                            <td class="up">+0.8%</td>
+                            <td><a href="#" class="trade-btn">Trade</a></td>
+                        </tr>
+                        <tr>
+                            <td>ADA/USDT</td>
+                            <td>$0.38</td>
+                            <td class="down">-0.6%</td>
+                            <td><a href="#" class="trade-btn">Trade</a></td>
+                        </tr>
+                        <tr>
+                            <td>DOT/USDT</td>
+                            <td>$4.80</td>
+                            <td class="up">+1.0%</td>
+                            <td><a href="#" class="trade-btn">Trade</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+
+        <section class="trade-form">
+            <h2>Execute Trade</h2>
+            <form action="" method="POST">
+                <label for="asset">Asset:</label>
+                <select id="asset" name="asset">
+                    <option value="BTC/USD">BTC/USD</option>
+                    <option value="ETH/USD">ETH/USD</option>
+                    <!-- Add more assets as needed -->
+                </select>
+
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+
+                <label for="action">Action:</label>
+                <select id="action" name="action">
+                    <option value="buy">Buy</option>
+                    <option value="sell">Sell</option>
+                </select>
+
+                <button class="executetradebtn" type="submit">Execute Trade</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="navbar">
+            <a class="" href="homepage.html">Homepage</a>
+            <a href="trade.html">Trade</a>
+            <a href="crypto.html">Crypto</a>
+            <a href="account.html">Account</a>
+          
+          </div>    </footer>
+</body>
+</html>

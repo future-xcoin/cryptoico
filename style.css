@@ -35,6 +35,10 @@ body {
     font-size: 18px;
     text-align: center;
   }
+  .transactionbtn:hover{
+    background: linear-gradient(135deg, #00000a,#055f94c4, #627eea);
+
+  }
   .transactionhref {
     text-decoration: none;
     color: white;
@@ -100,28 +104,28 @@ body {
     color: white;
     font-size: 20px;
     text-align: center;
-  }
-  .navbar {
+  }.navbar {
     position: fixed;
     bottom: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
     background-color: blue;
-    border-radius: 18px;
+    border-radius: 18px 18px 0 0; /* Only top corners are rounded */
     text-align: center;
-  }
-  .navbar a {
+}
+.navbar a {
     display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 14px;
     text-decoration: none;
-    
-  }
-  .navbar a:hover {
+}
+.navbar a:hover {
     background-color: rgb(224, 20, 243);
     color: white;
     border-radius: 8px;
-  }
+}
+
 
 /* CRYPTO PAGE styles */
 
@@ -288,31 +292,6 @@ main {
     width: 400px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;}
 
-#tron {
-    background-color: #f00;
-    border-color: blue;
-}
-
-
-#chainlink {
-    background-color: #2a5ada;
-    border-color: blue;
-}
-
-#stellar {
-    background-color: #7dcbfb;
-    border-color: blue;
-}
-
-#vechain {
-    background-color: #15bdff;
-    border-color: blue;
-}
-
-#cosmos {
-    background-color: #2e3148;
-    border-color: blue;
-}
 /* ACCOUNT PAGE styles */
 
 .accountcard{
@@ -517,3 +496,133 @@ a {
     margin: 0;
     line-height: 1.5;
   }
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.market-table {
+    margin-bottom: 30px;
+}
+
+.market-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.market-table th, .market-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.market-table th {
+    background-color: purple;
+    color: #fff;
+}
+
+.market-table td.up {
+    color: green;
+}
+
+.market-table td.down {
+    color: red;
+}
+
+.trade-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.trade-btn:hover {
+    background-color: #45a049;
+}
+
+.trade-form form {
+    max-width: 400px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #aaa;
+}
+
+.trade-form form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.trade-form form input, .trade-form form select, .trade-form form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.executetradebtn{
+  background-color:purple ;
+  color:white ;
+}
+.executetradebtn:hover{
+  background-color:rgb(231, 16, 195) ;
+  color:white ;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.h1blue {
+  color: blue;
+  margin-bottom: 10px;
+}
+
+.h2grey {
+  color: grey;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.contact-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: blue;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: darkblue;
+}

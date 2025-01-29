@@ -318,6 +318,10 @@ main {
 }
 a {
     text-decoration: none;
+    color: black;
+}
+.executetradebtn a {
+  text-decoration: none;
     color: white;
 }
 
